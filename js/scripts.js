@@ -14,5 +14,7 @@ $( document ).ready(function() {
   $("form#pizza_order").submit(function(event) {
     event.preventDefault();
 
+  $("#answer").show();
+
   });
 });
