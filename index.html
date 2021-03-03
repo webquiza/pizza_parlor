@@ -7,7 +7,69 @@
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
-<body>
+<body class="container">
+
+  <div class="jumbotron">
+    <div class="center">
+      <h1>Pizza Parlor</h1>
+      <img src="img/pizza_sign.jpg" alt="Pizza Sign">
+    </div>
+  </div>
+
+  <div class="center">
+    <h1>Build your pizza</h1>
+  </div>
+
+  <hr>
+
+  <form id="pizza_order">
+
+    <h3>Choose your toppings</h3>
+    <h4><strong>$1 each</strong></h4>
+
+    <div class="checkboxes">
+      <input type="checkbox" name="toppings" value="cheese"> Cheese<br>
+      <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
+      <input type="checkbox" name="toppings" value="bacon"> Bacon<br>
+      <input type="checkbox" name="toppings" value="black_olives"> Black Olives<br>
+      <input type="checkbox" name="toppings" value="green_olives"> Green Olives<br>
+      <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
+      <input type="checkbox" name="toppings" value="onion"> Onion<br>
+      <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
+      <input type="checkbox" name="toppings" value="sun_dried_tomatos"> Sun Dried Tomatoes<br>
+      <input type="checkbox" name="toppings" value="garlic"> Garlic<br>
+    </div>
+
+    <hr>
+
+    <h3>Choose a size</h3>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="small"> Small <br> 
+        <strong>$10</strong>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="size" value="medium"> Medium <br> <strong>$15</strong>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="size" value="large"> Large <br> 
+        <strong>$20</strong>
+      </label>
+    </div>
+
+    <hr>
+
+  </form> 
+
+  <button type="submit" class="btn-primary">See final price</button>
+
+  </div id="answer">
+    <h3 id="finalPrice"><h3>
+  </div>
   
 </body>
 </html>
