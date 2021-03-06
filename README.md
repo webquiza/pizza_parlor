@@ -33,13 +33,6 @@ Test:
 Expect
 ```
 
-**Describe: pizzaPrice();**
-
-```
-Test:
-Expect
-```
-
 ## Known Bugs
 
 * _No known bugs._
