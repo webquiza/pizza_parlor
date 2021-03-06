@@ -9,7 +9,7 @@
 </head>
 <body class="container">
 
-  <div class="jumbotron">
+  <div class="jumbotron bg-danger">
     <div class="center">
       <h1>Pizza Parlor</h1>
       <img src="img/pizza_sign.jpg" alt="Pizza Sign">
@@ -17,59 +17,89 @@
   </div>
 
   <div class="center">
-    <h1>Build your pizza</h1>
-  </div>
 
-  <hr>
+    <form id="pizza_order">
 
-  <form id="pizza_order">
+      <h3>Choose any topping for a <strong>$1 each</strong></h3>   
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="toppings" value="cheese">
+        <label class="form-check-label" for="inlineCheckbox1"> Cheese</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="toppings" value="pepperoni">
+        <label class="form-check-label" for="inlineCheckbox2"> Pepperoni</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="toppings" value="sausage">
+        <label class="form-check-label" for="inlineCheckbox3"> Sausage</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" name="toppings" value="bacon">
+        <label class="form-check-label" for="inlineCheckbox4"> Bacon</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" name="toppings" value="black_olives">
+        <label class="form-check-label" for="inlineCheckbox5"> Black Olives</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" name="toppings" value="green_olives">
+        <label class="form-check-label" for="inlineCheckbox6"> Green Olives</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" name="toppings" value="mushrooms">
+        <label class="form-check-label" for="inlineCheckbox7"> Mushrooms</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox8" name="toppings" value="onion">
+        <label class="form-check-label" for="inlineCheckbox8"> Onion</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox9" name="toppings" value="pineapple">
+        <label class="form-check-label" for="inlineCheckbox9"> Pineapple</label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox10" name="toppings" value="sun_dried_tomatos">
+        <label class="form-check-label" for="inlineCheckbox10"> Sun Dried Tomatoes</label>
+      </div>
+    
+      <h3>Choose a size</h3>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="size" id="inlineRadio1" value="small">
+        <label class="form-check-label" for="inlineRadio1"> Small for <strong>$10</strong></label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="size" id="inlineRadio2" value="medium">
+        <label class="form-check-label" for="inlineRadio2"> Medium for <strong>$15</strong></label>
+      </div>
+    
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="large">
+        <label class="form-check-label" for="inlineRadio3"> Large for <strong>$20</strong></label>
+      </div>
 
-    <h3>Choose your toppings</h3>
-    <h4><strong>$1 each</strong></h4>
+      <hr>
 
-    <div class="checkboxes">
-      <input type="checkbox" name="toppings" value="cheese"> Cheese<br>
-      <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
-      <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
-      <input type="checkbox" name="toppings" value="bacon"> Bacon<br>
-      <input type="checkbox" name="toppings" value="black_olives"> Black Olives<br>
-      <input type="checkbox" name="toppings" value="green_olives"> Green Olives<br>
-      <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
-      <input type="checkbox" name="toppings" value="onion"> Onion<br>
-      <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
-      <input type="checkbox" name="toppings" value="sun_dried_tomatos"> Sun Dried Tomatoes<br>
-      <input type="checkbox" name="toppings" value="garlic"> Garlic<br>
+      <button type="submit" class="btn btn-danger btn-lg">View final price</button>
+
+    </form> 
+
+    <div id="answer">
+      <h3>Your total is $<span id="output"><span><h3>
     </div>
 
-    <hr>
-
-    <h3>Choose a size</h3>
-
-    <div class="radio">
-      <label>
-        <input type="radio" name="size" value="small"> Small <br> 
-        <strong>$10</strong>
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="size" value="medium"> Medium <br> <strong>$15</strong>
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="size" value="large"> Large <br> 
-        <strong>$20</strong>
-      </label>
-    </div>
-
-    <hr>
-
-    <button type="submit" class="btn-primary">See final price</button>
-
-  </form> 
-
-  <div id="answer">
-    <h3>Your total is $<span id="output"><span><h3>
   </div>
-  
+
 </body>
 </html>
