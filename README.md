@@ -29,8 +29,8 @@ _Pizza order web application that allows a user to choose one or more individual
 **Describe: Pizza();**
 
 ```
-Test: 
-Expect
+Test: Display final price to user
+Expect if user selects three toppings and small pizza then .toEqual(“Your total is $13)
 ```
 
 ## Known Bugs
