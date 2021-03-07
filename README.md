@@ -22,7 +22,7 @@ _Pizza order web application that allows a user to choose one or more individual
 
 * _Clone this repository._
 * _Navigate to the top level of the directory._
-* _Open the index.html file in order to view in your browser. Alternatively, you can view the project via this [GitHub Page]()_
+* _Open the index.html file in order to view in your browser. Alternatively, you can view the project via this [GitHub Page](https://webquiza.github.io/pizza_parlor/)_
 
 ## Specifications
 
